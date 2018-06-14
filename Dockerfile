@@ -21,8 +21,8 @@ RUN mkdir /opt/android-sdk/licenses \
 RUN /opt/android-sdk/tools/bin/sdkmanager --update
 
 RUN /opt/android-sdk/tools/bin/sdkmanager "platform-tools" 
-RUN /opt/android-sdk/tools/bin/sdkmanager "build-tools;19.1.0" "build-tools;20.0.0" "build-tools;21.1.2" "build-tools;22.0.1" "build-tools;23.0.3" "build-tools;24.0.3" "build-tools;25.0.2" "build-tools;26.0.2" 
-RUN /opt/android-sdk/tools/bin/sdkmanager "platforms;android-21" "platforms;android-22" "platforms;android-23" "platforms;android-24" "platforms;android-25" "platforms;android-26" 
+RUN /opt/android-sdk/tools/bin/sdkmanager "build-tools;19.1.0" "build-tools;20.0.0" "build-tools;21.1.2" "build-tools;22.0.1" "build-tools;23.0.3" "build-tools;24.0.3" "build-tools;25.0.2" "build-tools;26.0.2" "build-tools;27.0.3" "build-tools;28.0.0"
+RUN /opt/android-sdk/tools/bin/sdkmanager "platforms;android-21" "platforms;android-22" "platforms;android-23" "platforms;android-24" "platforms;android-25" "platforms;android-26" "platforms;android-27" "platforms;android-28" 
 RUN /opt/android-sdk/tools/bin/sdkmanager "extras;google;google_play_services" "extras;google;m2repository" "extras;android;m2repository" 
 
 RUN wget -O /tmp/gradle-3.4.1-bin.zip https://services.gradle.org/distributions/gradle-3.4.1-bin.zip \
